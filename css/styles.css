@@ -18,30 +18,33 @@ body {
 
 header {
   border-bottom: #054d3b 10px solid;
-  padding: 10px 0;
 }
 
 /* Navigation */
 
-.nav-links {
+.nav-bar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding: 0;
   margin: 0 10%;
   list-style-type: none;
 }
 
-.nav-links li a {
+.nav-item {
+  margin: 10px 15px;
+}
+
+.nav-link {
   text-decoration: none;
   color: #054d3b;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-.nav-links li a:hover,
-.nav-links li a:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: #8fbd4f;
   text-decoration: underline;
 }
@@ -50,8 +53,8 @@ header {
 .logo {
 }
 
-.logo img {
-  max-width: 524px;
+#logo-img {
+  max-width: 100%;
   height: auto;
 }
 
