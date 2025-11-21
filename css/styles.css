@@ -27,13 +27,21 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 0;
-  margin: 0 10%;
+  row-gap: 10px;
+  margin: 10px 10%;
   list-style-type: none;
 }
 
-.nav-item {
-  margin: 10px 15px;
+.nav-list {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 20px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .nav-link {
@@ -49,9 +57,12 @@ header {
   text-decoration: underline;
 }
 
-/* Logo */
-.logo {
+.nav-link:active {
+  color: #054d3b;
+  text-decoration: underline;
 }
+
+/* Logo */
 
 #logo-img {
   max-width: 100%;
