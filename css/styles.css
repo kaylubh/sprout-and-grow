@@ -11,7 +11,7 @@ body {
   padding: 0;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #f4f0ec;
+  background-color: #dfe2d2;
 }
 
 p {
@@ -110,18 +110,23 @@ footer {
 .social-icons svg {
   width: 3.5rem;
   height: 3.5rem;
-  fill: #f4f0ec;
+  fill: #dfe2d2;
   opacity: 0.9;
+}
+
+.social-icons svg:hover,
+.social-icons svg:focus {
+  fill: #edefe6;
+  opacity: 1;
 }
 
 .footer-text {
   text-align: center;
   max-width: 80%;
-  color: #f4f0ec;
-  opacity: 0.9;
+  color: #dfe2d2;
 }
 
 .footer-text a {
-  color: #f4f0ec;
+  color: #dfe2d2;
   text-decoration: underline;
 }
