@@ -14,9 +14,13 @@ body {
   background-color: #dfe2d2;
 }
 
-p {
+p, h1 {
   margin: 0;
+}
+
+p {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* Header */
@@ -74,6 +78,12 @@ header {
 }
 
 /* Main */
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  float: right;
+}
 
 /* Footer */
 
