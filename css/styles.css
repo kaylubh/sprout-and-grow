@@ -14,13 +14,19 @@ body {
   background-color: #dfe2d2;
 }
 
-p, h1 {
+p,
+h1 {
   margin: 0;
 }
 
 p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.heading {
+  color: #054d3b;
+  font-size: 1.5rem;
 }
 
 /* Header */
@@ -79,10 +85,94 @@ header {
 
 /* Main */
 
+main {
+  margin: 2em 10%;
+}
+
+.page-heading {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.hero {
+  margin: 2em 0;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+}
+
 .hero-img {
-  max-width: 100%;
+  margin: 0 0 1em 1em;
+  border-top: #054d3b 4px solid;
+  border-left: #054d3b 4px solid;
+  border-right: #054d3b 10px solid;
+  border-bottom: #054d3b 10px solid;
+  border-radius: 30px;
+  box-shadow: 10px 10px 15px rgba(5, 77, 59, 0.3);
+  max-width: 50%;
   height: auto;
   float: right;
+}
+
+@media screen and (max-width: 500px) {
+  /* remove image float on small screens */
+  .hero-img {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    float: none;
+    display: block;
+    margin: 0 auto 1em auto;
+  }
+}
+
+.cta {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em 1em;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+.cta-item {
+  background-color: #054d3b;
+  padding: 0.5em;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(5, 77, 59, 0.3);
+  font-weight: bold;
+}
+
+.cta-item:hover,
+.cta-item:focus {
+  background-color: #8fbd4f;
+}
+
+.cta-link {
+  text-decoration: none;
+  /* color: #dfe2d2; */
+  color: #edefe6;
+}
+
+.resources {
+  font-size: 1.25rem;
+}
+
+.resources dt {
+  margin: 1em 0;
+  font-weight: bold;
+}
+
+.resources dt a {
+  color: #054d3b;
+}
+
+.resources dd {
+  margin: 0 0 0 1em;
+  padding: 0;
 }
 
 /* Footer */
