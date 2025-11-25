@@ -1,23 +1,232 @@
-/* Basic CSS file for Sprout & Grow website */
+/* Base Styles */
 
-body,
 html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
+  background-color: #dfe2d2;
 }
 
-header,
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
+p,
+h1 {
+  margin: 0;
 }
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.heading {
+  color: #054d3b;
+  font-size: 1.5rem;
+}
+
+/* Header */
+
+header {
+  border-bottom: #054d3b 10px solid;
+}
+
+/* Navigation */
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 10px;
+  margin: 10px 10%;
+}
+
+.nav-list {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #054d3b;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #8fbd4f;
+  text-decoration: underline;
+}
+
+.nav-link:active {
+  color: #054d3b;
+  text-decoration: underline;
+}
+
+/* Logo */
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main */
 
 main {
-  padding: 20px;
+  margin: 2em 10%;
+}
+
+.page-heading {
+  font-size: 1.75rem;
   text-align: center;
 }
 
-/* Add specific styles for navigation, main content, images, etc. */
+.hero {
+  margin: 2em 0;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+}
+
+.hero-img {
+  margin: 0 0 1em 1em;
+  border-top: #054d3b 4px solid;
+  border-left: #054d3b 4px solid;
+  border-right: #054d3b 10px solid;
+  border-bottom: #054d3b 10px solid;
+  border-radius: 30px;
+  box-shadow: 10px 10px 15px rgba(5, 77, 59, 0.3);
+  max-width: 50%;
+  height: auto;
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  /* remove image float on small screens */
+  .hero-img {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    float: none;
+    display: block;
+    margin: 0 auto 1em auto;
+  }
+}
+
+.cta {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em 1em;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+.cta-item {
+  background-color: #054d3b;
+  padding: 0.5em;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(5, 77, 59, 0.3);
+  font-weight: bold;
+}
+
+.cta-item:hover,
+.cta-item:focus {
+  background-color: #8fbd4f;
+}
+
+.cta-link {
+  text-decoration: none;
+  /* color: #dfe2d2; */
+  color: #edefe6;
+}
+
+.resources {
+  font-size: 1.25rem;
+}
+
+.resources dt {
+  margin: 1em 0;
+  font-weight: bold;
+}
+
+.resources dt a {
+  color: #054d3b;
+}
+
+.resources dd {
+  margin: 0 0 0 1em;
+  padding: 0;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding: 10px 0;
+  background-color: #054d3b;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+.footer-logo img {
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.social-icons svg {
+  width: 3.5rem;
+  height: 3.5rem;
+  fill: #dfe2d2;
+  opacity: 0.9;
+}
+
+.social-icons svg:hover,
+.social-icons svg:focus {
+  fill: #edefe6;
+  opacity: 1;
+}
+
+.footer-text {
+  text-align: center;
+  max-width: 80%;
+  color: #dfe2d2;
+}
+
+.footer-text a {
+  color: #dfe2d2;
+  text-decoration: underline;
+}
