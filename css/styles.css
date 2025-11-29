@@ -1,4 +1,4 @@
-/* Base Styles */
+/****** BASE STYLES ******/
 
 html {
   box-sizing: border-box;
@@ -24,10 +24,7 @@ p {
   line-height: 1.5;
 }
 
-.heading {
-  color: #054d3b;
-  font-size: 1.5rem;
-}
+/****** COMPONENT STYLES ******/
 
 /* Header */
 
@@ -89,10 +86,75 @@ main {
   margin: 2em 10%;
 }
 
+.heading {
+  color: #054d3b;
+  font-size: 1.5rem;
+}
+
 .page-heading {
   font-size: 1.75rem;
   text-align: center;
 }
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding: 10px 0;
+  background-color: #054d3b;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+.footer-logo img {
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.social-icons svg {
+  width: 3.5rem;
+  height: 3.5rem;
+  fill: #dfe2d2;
+  opacity: 0.9;
+}
+
+.social-icons svg:hover,
+.social-icons svg:focus {
+  fill: #edefe6;
+  opacity: 1;
+}
+
+.footer-text {
+  text-align: center;
+  max-width: 80%;
+  color: #dfe2d2;
+}
+
+.footer-text a {
+  color: #dfe2d2;
+  text-decoration: underline;
+}
+
+/****** PAGE STYLES ******/
+
+/* Home */
 
 .hero {
   margin: 2em 0;
@@ -175,58 +237,77 @@ main {
   padding: 0;
 }
 
-/* Footer */
+/* About */
 
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: auto;
-  padding: 10px 0;
-  background-color: #054d3b;
+.about {
+  margin: 2em 0;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 80%;
+.about-text {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
-.footer-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 80%;
+.values {
+  margin: 2em 0;
+  font-size: 1.25rem;
 }
 
-.footer-logo img {
-  border-radius: 20px;
-  opacity: 0.9;
+.values ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.social-icons svg {
-  width: 3.5rem;
-  height: 3.5rem;
-  fill: #dfe2d2;
-  opacity: 0.9;
+.values li {
+ margin-bottom: 1.25rem;
 }
 
-.social-icons svg:hover,
-.social-icons svg:focus {
-  fill: #edefe6;
-  opacity: 1;
+.values-emphasis {
+  font-style: italic;
+  color: #054d3b;
 }
 
-.footer-text {
-  text-align: center;
-  max-width: 80%;
-  color: #dfe2d2;
+.resources {
+  font-size: 1.25rem;
 }
 
-.footer-text a {
-  color: #dfe2d2;
-  text-decoration: underline;
+.resources dt {
+  margin: 1em 0;
+  font-weight: bold;
+}
+
+.resources dt a {
+  color: #054d3b;
+}
+
+.resources dd {
+  margin: 0 0 0 1em;
+  padding: 0;
+}
+
+.about-img {
+  margin: 0 0 1em 1em;
+  border-top: #054d3b 4px solid;
+  border-left: #054d3b 4px solid;
+  border-right: #054d3b 10px solid;
+  border-bottom: #054d3b 10px solid;
+  border-radius: 30px;
+  box-shadow: 10px 10px 15px rgba(5, 77, 59, 0.3);
+  width: auto;
+  max-width: 50%;
+  height: auto;
+  max-height: 400px;
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  /* remove image float on small screens */
+  .about-img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    float: none;
+    display: block;
+    margin: 0 auto 1em auto;
+  }
 }
