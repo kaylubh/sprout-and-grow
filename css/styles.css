@@ -373,6 +373,10 @@ footer {
   padding: 1em;
 }
 
+.product-caption p {
+  font-size: 1.25rem;
+}
+
 .product-caption a {
   align-self: flex-start;
   padding: 0.5rem 1rem;
@@ -380,5 +384,6 @@ footer {
   text-decoration: none;
   background-color: #054d3b;
   color: #dfe2d2;
+  font-size: 1.25rem;
   font-weight: bold;
 }
