@@ -143,8 +143,8 @@ textarea {
 }
 
 .registration input:focus,
-select:focus,
-textarea:focus {
+.registration select:focus,
+.registration textarea:focus {
   border-color: #8fbd4f;
 }
 
