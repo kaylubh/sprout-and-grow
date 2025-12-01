@@ -121,8 +121,8 @@
 }
 
 .registration input,
-select,
-textarea {
+.registration select,
+.registration textarea {
   padding: 0.5rem;
   border: #054d3b 2px solid;
   border-radius: 5px;
