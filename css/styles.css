@@ -368,8 +368,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   justify-content: space-evenly;
-  gap: 2em;
-  margin: 2em 0;
+  gap: 2rem;
+  margin: 2rem 0;
   width: 100%;
 }
 
@@ -393,8 +393,8 @@ footer {
 .product-caption {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
-  padding: 1em;
+  gap: 1.25rem;
+  padding: 1.25rem;
 }
 
 .product-caption p {
@@ -405,7 +405,6 @@ footer {
   align-self: flex-start;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  text-decoration: none;
   background-color: #054d3b;
   color: #f4f0ec;
   font-size: 1.25rem;
