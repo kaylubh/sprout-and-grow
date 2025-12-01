@@ -39,6 +39,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  padding: 0;
 }
 
 p {
@@ -383,7 +384,80 @@ footer {
   border-radius: 5px;
   text-decoration: none;
   background-color: #054d3b;
-  color: #dfe2d2;
+  color: #f4f0ec;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Events */
+
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+.events-month {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.events-month .heading {
+  text-align: center;
+}
+
+.events-list {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(244, 240, 236, 0.7);
+  border: #054d3b 5px solid;
+  border-radius: 15px;
+  padding: 1em;
+  font-size: 1.25rem;
+}
+
+.event-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.event-title svg {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  fill: #054d3b;
+}
+
+.event-details {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.event-description {
+  font-size: 1.25rem;
+}
+
+.event-card a {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #054d3b;
+  color: #f4f0ec;
+  text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
 }
