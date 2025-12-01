@@ -403,7 +403,7 @@ footer {
 
 .product-caption a {
   align-self: flex-start;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.25rem;
   border-radius: 5px;
   background-color: #054d3b;
   color: #f4f0ec;
@@ -411,19 +411,24 @@ footer {
   font-weight: bold;
 }
 
+.product-caption a:hover,
+.product-caption a:focus {
+  background-color: #8fbd4f;
+}
+
 /* Events */
 
 .events {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  margin: 2em 0;
+  gap: 1rem;
+  margin: 2rem 0;
 }
 
 .events-month {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .events-month .heading {
@@ -432,9 +437,9 @@ footer {
 
 .events-list {
   display: flex;
-  gap: 2em;
   flex-direction: column;
   list-style-type: none;
+  gap: 2rem;
   margin: 0;
   padding: 0;
 }
@@ -445,7 +450,7 @@ footer {
   background-color: rgba(244, 240, 236, 0.7);
   border: #054d3b 5px solid;
   border-radius: 15px;
-  padding: 1em;
+  padding: 1.25rem;
   font-size: 1.25rem;
 }
 
@@ -453,7 +458,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1em;
+  gap: 1.25rem;
 }
 
 .event-title svg {
@@ -474,14 +479,18 @@ footer {
 
 .event-card a {
   align-self: flex-start;
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
   border-radius: 5px;
   background-color: #054d3b;
   color: #f4f0ec;
-  text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+.event-card a:hover,
+.event-card a:focus {
+  background-color: #8fbd4f;
 }
 
 /* Event Registration Form */
@@ -492,33 +501,33 @@ footer {
 .registration select,
 .registration textarea,
 .registration label {
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
   font-size: 1rem;
 }
 
 .registration {
-  background-color: rgba(244, 240, 236, 0.7);
   border: #054d3b 5px solid;
   border-radius: 15px;
-  padding: 1em;
+  padding: 1rem;
+  background-color: rgba(244, 240, 236, 0.7);
 }
 
 .registration h2 {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .registration form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .registration fieldset {
   margin: 0;
   border: #054d3b 3px solid;
   border-radius: 15px;
-  padding: 0.5em 1em 1em 1em;
+  padding: 0.5rem 1rem 1rem 1rem;
 }
 
 .registration legend {
@@ -534,7 +543,7 @@ footer {
 .registration input,
 select,
 textarea {
-  padding: 0.5em;
+  padding: 0.5rem;
   border: #054d3b 2px solid;
   border-radius: 5px;
   width: 100%;
@@ -564,11 +573,11 @@ textarea:focus {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 1em;
+  gap: 1.25rem;
 }
 
 .registration-buttons button {
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.25rem;
   border-radius: 5px;
   background-color: #054d3b;
   color: #f4f0ec;
