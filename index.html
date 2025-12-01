@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sprout & Grow</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home-styles.css" />
   </head>
   <body>
     <header>
       <nav class="nav-bar">
         <!-- logo -->
         <div>
-          <a href="#">
+          <a href="/">
             <img
               class="logo-img"
               src="images/sprout-grow-horizontal-524-transparent.png"
@@ -22,77 +23,72 @@
         </div>
         <!-- page links -->
         <ul class="nav-list">
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link">About</a></li>
-          <li><a href="#" class="nav-link">Products</a></li>
-          <li><a href="#" class="nav-link">Events</a></li>
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <!-- Home page main content goes here: hero image, intro text, etc. -->
-      <h1 class="heading page-heading">
-        Sprout & Grow: Your premier organic nursery in Raleigh, North Carolina.
-      </h1>
+      <h1 class="heading page-heading">Welcome to Sprout & Grow</h1>
       <section class="hero">
-        <!-- image from Unsplash; https://unsplash.com/photos/green-plants-on-brown-soil-gRL51XF4NWM -->
-        <img
-          class="hero-img"
-          src="images/nursery.jpg"
-          alt="A small greenhouse nursery with various plants."
-          width="640"
-          height="853" />
-        <h2 class="heading">Who We Are:</h2>
-        <!-- paragraph below is AI generated text using ChatGPT -->
-        <p class="hero-text">
-          Sprout & Grow is Raleigh's dedicated greenhouse nursery for gardeners
-          who care about beautiful, healthy, and sustainable growth — we
-          cultivate a diverse selection of high-quality organic plants and pair
-          them with friendly expert guidance, practical plant-care resources,
-          and hands-on community workshops to help you build a thriving garden,
-          no matter the space. Whether you're starting a balcony oasis,
-          converting your backyard to organic beds, or teaching the next
-          generation about sustainable growing, our transparent, eco-first
-          approach and curated plant collections make it easy to choose
-          confidently and grow successfully. Stop by to explore our seasonal
-          selections, join an event or class, or browse our online catalog to
-          find the perfect plants and tips that fit your life and values.
-        </p>
-        <ul class="cta">
-          <li class="cta-item">
-            <a href="#" class="cta-link">Shop Our Plants</a>
-          </li>
-          <li class="cta-item">
-            <a href="#" class="cta-link">Upcoming Events</a>
-          </li>
-          <li class="cta-item">
-            <a href="#" class="cta-link">More About Us</a>
-          </li>
-        </ul>
-      </section>
-      <section class="resources">
-        <h2 class="heading">Our Favorite Gardening Resources:</h2>
-        <dl>
-          <dt>
-            <a href="https://gardening.ces.ncsu.edu/" target="_blank"
-              >NC Cooperative Extension: Gardening</a
-            >
-          </dt>
-          <dd>
-            Comprehensive gardening advice and resources specific to North
-            Carolina from experts at NC State University and NC A&T State
-            University.
-          </dd>
-          <dt>
-            <a href="https://www.rhs.org.uk/" target="_blank"
-              >Royal Horticultural Society (RHS)</a
-            >
-          </dt>
-          <dd>
-            The UK's leading gardening charity, providing expert advice and
-            resources.
-          </dd>
-        </dl>
+        <!-- partially AI generated text using Google Gemini -->
+        <a href="products.html" aria-label="Our Products">
+          <figure class="hero-card">
+            <!-- image from Unsplash; https://unsplash.com/photos/a-vibrant-orange-zinnia-flower-in-full-bloom-x6MBNeIgmlc -->
+            <img
+              src="images/products/flower.jpg"
+              alt="A bright orange zinnia flower in full bloom"
+              class="hero-img" />
+            <figcaption class="hero-content">
+              <h2 class="heading">Our Products</h2>
+              <p class="hero-text">
+                Grow beautiful, healthy, and sustainable gardens with Sprout &
+                Grow's diverse selection of meticulously nurtured, high-quality
+                organic plants, curated for confident and successful cultivation
+                in any space.
+              </p>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="events.html" aria-label="Get Involved">
+          <figure class="hero-card">
+            <!-- image from Unsplash; https://unsplash.com/photos/person-holding-brown-and-black-frog-q13Zq1Jufks -->
+            <img
+              src="images/gardening.jpg"
+              alt="A person gardening, digging in the soil with their hands."
+              class="hero-img" />
+            <figcaption class="hero-content">
+              <h2 class="heading">Get Involved</h2>
+              <p class="hero-text">
+                Deepen your connection with nature and master gardening
+                techniques by joining Sprout & Grow's practical plant-care
+                workshops, hands-on seasonal events, and expert guidance
+                sessions designed for home gardeners and environmental
+                enthusiasts.
+              </p>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="about.html" aria-label="Who We Are">
+          <figure class="hero-card">
+            <!-- image from Unsplash; https://unsplash.com/photos/green-plants-on-brown-soil-gRL51XF4NWM -->
+            <img
+              src="images/nursery.jpg"
+              alt="A small greenhouse nursery with various plants."
+              class="hero-img" />
+            <figcaption class="hero-content">
+              <h2 class="heading">Who We Are</h2>
+              <p class="hero-text">
+                Sprout & Grow is Raleigh, NC's premier organic greenhouse
+                nursery dedicated to providing high-quality, sustainable plants,
+                expert guidance, and educational resources to empower its
+                community of gardeners.
+              </p>
+            </figcaption>
+          </figure>
+        </a>
       </section>
     </main>
     <footer>
@@ -115,7 +111,7 @@
       </div>
       <!-- logo -->
       <div class="footer-logo">
-        <a href="#">
+        <a href="/">
           <img
             class="logo-img"
             src="images/sprout-grow-horizontal-524.png"
