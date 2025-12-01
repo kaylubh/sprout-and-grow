@@ -30,7 +30,9 @@
       </nav>
     </header>
     <main>
-      <h1 class="heading page-heading">Events and Workshops</h1>
+      <h1 class="heading page-heading" id="events-heading">
+        Events and Workshops
+      </h1>
       <section class="events">
         <!-- event descriptions are partially AI generated using GitHub Copilot -->
         <section class="events-month">
@@ -109,7 +111,7 @@
                 </svg>
               </div>
               <p class="event-details">
-                January 20, 2026 | 11:00 AM - 1:00 PM | $30 | 10 Seats Available
+                January 20, 2026 | 11:00 AM - 1:00 PM | $10 | 10 Seats Available
               </p>
               <p class="event-description">
                 Discover the joys of indoor gardening! This workshop will cover
@@ -121,8 +123,126 @@
           </ul>
         </section>
       </section>
-      <section class="workshops">
+      <section class="registration">
         <h2 class="heading" id="register">Event Registration</h2>
+        <form action="">
+          <fieldset>
+            <p class="form-required">Required</p>
+            <legend>Select Event</legend>
+            <label for="event-select">Event:</label>
+            <select id="event-select" name="event-select" required>
+              <option value="" disabled selected>Select an event</option>
+              <option value="holiday-wreath-making">
+                Holiday Wreath Making - Dec 10, 2025
+              </option>
+              <option value="winter-plant-care-seminar">
+                Winter Plant Care Seminar - Dec 15, 2025
+              </option>
+              <option value="new-year-garden-planning">
+                New Year, New Garden Planning - Jan 5, 2026
+              </option>
+              <option value="indoor-gardening-workshop">
+                Indoor Gardening Workshop - Jan 20, 2026
+              </option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <p class="form-required">Required</p>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="First and Last Name"
+              required />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              required />
+            <label for="phone-number">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone-number"
+              placeholder="Phone Number"
+              required />
+          </fieldset>
+          <fieldset>
+            <p class="form-required">Required</p>
+            <legend>Agreements</legend>
+            <p>
+              Events registration and attendance is first come, first serve.
+              Failure to arrive within 10 minutes of the event start time may
+              result in loss of your seat.
+            </p>
+            <input
+              type="checkbox"
+              id="attendance-agreement"
+              name="attendance-agreement"
+              required />
+            <label for="attendance-agreement">I agree</label>
+            <p>
+              If your event requires a fee, payment must be made at the start of
+              or before the event. If payment is not received within 10 minutes
+              of the event start time, your seat may be forfeited.
+            </p>
+            <input
+              type="checkbox"
+              id="payment-agreement"
+              name="payment-agreement"
+              required />
+            <label for="payment-agreement">I agree</label>
+          </fieldset>
+          <fieldset>
+            <legend>Referral Information</legend>
+            <p>How did you hear about us?</p>
+            <div>
+              <input type="checkbox" id="social-media" name="referral" />
+              <label for="social-media">Social Media</label>
+            </div>
+            <div>
+              <input type="checkbox" id="friend" name="referral" />
+              <label for="friend">Friend/Family</label>
+            </div>
+            <div>
+              <input type="checkbox" id="advertisement" name="referral" />
+              <label for="advertisement">Advertisement</label>
+            </div>
+            <div>
+              <input type="checkbox" id="other" name="referral" />
+              <label for="other">Other</label>
+            </div>
+            <p>Join Our Events Newsletter?</p>
+            <div>
+              <input type="radio" id="newsletter-yes" name="newsletter" />
+              <label for="newsletter-yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" id="newsletter-no" name="newsletter" />
+              <label for="newsletter-no">No</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Additional Information</legend>
+            <p>Accommodations or Special Requests:</p>
+            <textarea
+              id="special-requests"
+              name="special-requests"
+              rows="4"
+              cols="50"
+              placeholder="Please specify any accommodations or special requests here."></textarea>
+          </fieldset>
+          <div class="registration-buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset Form</button>
+            <button><a href="#events-heading">Back to Top</a></button>
+            <button><a href="/">Home</a></button>
+          </div>
+        </form>
       </section>
     </main>
     <footer>
