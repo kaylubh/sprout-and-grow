@@ -183,6 +183,84 @@ footer {
 
 /* Home */
 
+.hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+
+.hero a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: #054d3b 5px solid;
+  border-radius: 15px;
+  min-height: calc(
+    90vh - (8rem + 1.75rem)
+  ); /* main content uses full height of the viewport minus header, margins, and page heading */
+  background-color: rgba(244, 240, 236, 0.7);
+}
+
+.hero-card:hover,
+.hero-card:focus {
+  box-shadow: 0 0 10px 10px rgba(5, 77, 59, 0.5);
+}
+
+.hero-img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero-content h2 {
+  padding: 1rem;
+  background-color: #054d3b;
+  color: #f4f0ec;
+  text-align: center;
+  font-size: 1.75rem;
+  text-decoration: underline;
+}
+
+.hero-text {
+  justify-self: center;
+  margin: 1rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  /* adjust grid to one column on smaller screens, remove min-height to limit scroll length */
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* hide hero text on very small screens (mobile) */
+  .hero-text {
+    display: none;
+  }
+}
+
 /* .hero {
   margin: 2em 0;
 }
@@ -465,11 +543,11 @@ footer {
 /* Event Registration Form */
 
 .registration form,
-p,
-input,
-select,
-textarea,
-label {
+.registration p,
+.registration input,
+.registration select,
+.registration textarea,
+.registration label {
   margin: 0.5em 0;
   font-size: 1rem;
 }
@@ -520,8 +598,8 @@ textarea {
   accent-color: #054d3b;
 }
 
-.registration input[type="checkbox"],
-.registration input[type="radio"] {
+.registration input[type='checkbox'],
+.registration input[type='radio'] {
   width: auto;
   margin-right: 0.5rem;
 }
