@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: 'Quicksand', Arial, sans-serif;
   background-color: #dfe2d2;
 }
 
@@ -96,6 +96,38 @@ header {
 
 .nav-link:active {
   color: #054d3b;
+  text-decoration: underline;
+}
+
+.dropdown-title {
+  cursor: pointer;
+  list-style: none;
+}
+
+.dropdown-list {
+  position: absolute;
+  border: 3px solid #054d3b;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: inherit;
+  background-color: #dfe2d2;
+  list-style-type: none;
+}
+
+.dropdown-list li {
+  margin: 10px 0;
+}
+
+.dropdown-list-link {
+  color: #054d3b;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dropdown-list-link:hover,
+.dropdown-list-link:focus {
+  color: #8fbd4f;
   text-decoration: underline;
 }
 

@@ -6,6 +6,11 @@
     <title>Products | Sprout & Grow</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/products-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -26,7 +31,46 @@
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="products.html" class="nav-link">Products</a></li>
-          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li>
+            <!-- events dropdown nav menu -->
+            <details>
+              <summary class="nav-link dropdown-title">Events</summary>
+              <ul class="dropdown-list">
+                <li>
+                  <a class="dropdown-list-link" href="events.html">Events</a>
+                </li>
+                <li>
+                  <a class="dropdown-list-link" href="event-registration.html"
+                    >Registration</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <!-- learn dropdown nav menu -->
+            <details>
+              <summary class="nav-link dropdown-title">Learn</summary>
+              <ul class="dropdown-list">
+                <li>
+                  <a
+                    class="dropdown-list-link"
+                    href="https://gardening.ces.ncsu.edu/"
+                    target="_blank"
+                    >NC Cooperative Extension: Gardening</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-list-link"
+                    href="https://www.rhs.org.uk/"
+                    target="_blank"
+                    >Royal Horticultural Society (RHS)</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
         </ul>
       </nav>
     </header>
@@ -129,6 +173,17 @@
           </svg>
         </a>
       </div>
+      <!-- text -->
+      <p class="footer-text">
+        <a href="#">contact@sproutandgrow.com</a> | (555) 123-4567 | 1234 Main
+        Street, Raleigh, NC 27601
+      </p>
+      <p class="footer-text">
+        &copy; 2025 Sprout & Grow | Website by:
+        <a href="https://www.linkedin.com/in/calebhemphill/" target="_blank"
+          >Caleb Hemphill</a
+        >
+      </p>
       <!-- logo -->
       <div class="footer-logo">
         <a href="index.html">
@@ -140,13 +195,6 @@
             height="56" />
         </a>
       </div>
-      <!-- text -->
-      <p class="footer-text">
-        &copy; 2025 Sprout & Grow | Website by:
-        <a href="https://www.linkedin.com/in/calebhemphill/" target="_blank"
-          >Caleb Hemphill</a
-        >
-      </p>
     </footer>
   </body>
 </html>

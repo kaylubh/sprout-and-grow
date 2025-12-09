@@ -6,6 +6,11 @@
     <title>Events | Sprout & Grow</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/events-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -26,14 +31,51 @@
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="products.html" class="nav-link">Products</a></li>
-          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li>
+            <!-- events dropdown nav menu -->
+            <details>
+              <summary class="nav-link dropdown-title">Events</summary>
+              <ul class="dropdown-list">
+                <li>
+                  <a class="dropdown-list-link" href="events.html">Events</a>
+                </li>
+                <li>
+                  <a class="dropdown-list-link" href="event-registration.html"
+                    >Registration</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <!-- learn dropdown nav menu -->
+            <details>
+              <summary class="nav-link dropdown-title">Learn</summary>
+              <ul class="dropdown-list">
+                <li>
+                  <a
+                    class="dropdown-list-link"
+                    href="https://gardening.ces.ncsu.edu/"
+                    target="_blank"
+                    >NC Cooperative Extension: Gardening</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-list-link"
+                    href="https://www.rhs.org.uk/"
+                    target="_blank"
+                    >Royal Horticultural Society (RHS)</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1 class="heading page-heading" id="events-heading">
-        Events and Workshops
-      </h1>
+      <h1 class="heading page-heading">Events and Workshops</h1>
       <section class="events">
         <!-- event descriptions are partially AI generated using GitHub Copilot -->
         <section class="events-month">
@@ -56,7 +98,7 @@
                 beautiful holiday wreaths using fresh organic materials from our
                 nursery. All supplies provided.
               </p>
-              <a href="#register">Register</a>
+              <a href="event-registration.html">Register</a>
             </li>
             <li class="event-card">
               <div class="event-title">
@@ -76,7 +118,7 @@
                 during the winter months. We'll cover topics such as watering,
                 light requirements, and pest management.
               </p>
-              <a href="#register">Register</a>
+              <a href="event-registration.html">Register</a>
             </li>
           </ul>
         </section>
@@ -100,7 +142,7 @@
                 advice. We'll help you choose the right plants and layout for a
                 successful growing season.
               </p>
-              <a href="#register">Register</a>
+              <a href="event-registration.html">Register</a>
             </li>
             <li class="event-card">
               <div class="event-title">
@@ -119,133 +161,10 @@
                 selecting, potting, and caring for indoor plants to enhance your
                 living space. Free houseplant included!
               </p>
-              <a href="#register">Register</a>
+              <a href="event-registration.html">Register</a>
             </li>
           </ul>
         </section>
-      </section>
-      <section class="registration">
-        <h2 class="heading" id="register">Event Registration</h2>
-        <form action="">
-          <fieldset>
-            <p class="form-required">Required</p>
-            <legend>Select Event</legend>
-            <label for="event-select">Event:</label>
-            <select id="event-select" name="event-select" required>
-              <option value="" disabled selected>Select an event</option>
-              <option value="holiday-wreath-making">
-                Holiday Wreath Making - Dec 10, 2025
-              </option>
-              <option value="winter-plant-care-seminar">
-                Winter Plant Care Seminar - Dec 15, 2025
-              </option>
-              <option value="new-year-garden-planning">
-                New Year, New Garden Planning - Jan 5, 2026
-              </option>
-              <option value="indoor-gardening-workshop">
-                Indoor Gardening Workshop - Jan 20, 2026
-              </option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Personal Information</legend>
-            <p class="form-required">Required</p>
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="First and Last Name"
-              required />
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email Address"
-              required />
-            <label for="phone-number">Phone Number:</label>
-            <input
-              type="tel"
-              id="phone-number"
-              name="phone-number"
-              placeholder="Phone Number"
-              required />
-          </fieldset>
-          <fieldset>
-            <p class="form-required">Required</p>
-            <legend>Agreements</legend>
-            <p>
-              Events registration and attendance is first come, first serve.
-              Failure to arrive within 10 minutes of the event start time may
-              result in loss of your seat.
-            </p>
-            <input
-              type="checkbox"
-              id="attendance-agreement"
-              name="attendance-agreement"
-              required />
-            <label for="attendance-agreement">I agree</label>
-            <p>
-              If your event requires a fee, payment must be made at the start of
-              or before the event. If payment is not received within 10 minutes
-              of the event start time, your seat may be forfeited.
-            </p>
-            <input
-              type="checkbox"
-              id="payment-agreement"
-              name="payment-agreement"
-              required />
-            <label for="payment-agreement">I agree</label>
-          </fieldset>
-          <fieldset>
-            <legend>Referral Information</legend>
-            <p>How did you hear about us?</p>
-            <div>
-              <input type="checkbox" id="social-media" name="referral" />
-              <label for="social-media">Social Media</label>
-            </div>
-            <div>
-              <input type="checkbox" id="friend" name="referral" />
-              <label for="friend">Friend/Family</label>
-            </div>
-            <div>
-              <input type="checkbox" id="advertisement" name="referral" />
-              <label for="advertisement">Advertisement</label>
-            </div>
-            <div>
-              <input type="checkbox" id="other" name="referral" />
-              <label for="other">Other</label>
-            </div>
-            <p>Join Our Events Newsletter?</p>
-            <div>
-              <input type="radio" id="newsletter-yes" name="newsletter" />
-              <label for="newsletter-yes">Yes</label>
-            </div>
-            <div>
-              <input type="radio" id="newsletter-no" name="newsletter" />
-              <label for="newsletter-no">No</label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Additional Information</legend>
-            <p>Accommodations or Special Requests:</p>
-            <textarea
-              id="special-requests"
-              name="special-requests"
-              rows="4"
-              cols="50"
-              placeholder="Please specify any accommodations or special requests here."></textarea>
-          </fieldset>
-          <div class="registration-buttons">
-            <button type="submit">Submit</button>
-            <button type="reset">Reset Form</button>
-            <button type="button">
-              <a href="#events-heading">Back to Top</a>
-            </button>
-            <button type="button"><a href="index.html">Home</a></button>
-          </div>
-        </form>
       </section>
     </main>
     <footer>
@@ -266,6 +185,17 @@
           </svg>
         </a>
       </div>
+      <!-- text -->
+      <p class="footer-text">
+        <a href="#">contact@sproutandgrow.com</a> | (555) 123-4567 | 1234 Main
+        Street, Raleigh, NC 27601
+      </p>
+      <p class="footer-text">
+        &copy; 2025 Sprout & Grow | Website by:
+        <a href="https://www.linkedin.com/in/calebhemphill/" target="_blank"
+          >Caleb Hemphill</a
+        >
+      </p>
       <!-- logo -->
       <div class="footer-logo">
         <a href="index.html">
@@ -277,13 +207,6 @@
             height="56" />
         </a>
       </div>
-      <!-- text -->
-      <p class="footer-text">
-        &copy; 2025 Sprout & Grow | Website by:
-        <a href="https://www.linkedin.com/in/calebhemphill/" target="_blank"
-          >Caleb Hemphill</a
-        >
-      </p>
     </footer>
   </body>
 </html>
