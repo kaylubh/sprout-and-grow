@@ -5,14 +5,15 @@
   margin: 2rem 0;
 }
 
+.events .heading,
+.events-month .heading {
+  text-align: center;
+}
+
 .events-month {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-.events-month .heading {
-  text-align: center;
 }
 
 .events-list {
