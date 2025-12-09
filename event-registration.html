@@ -77,10 +77,11 @@
     <main>
       <h1 class="heading page-heading">Event Registration</h1>
       <section class="registration">
+        <h2 class="heading">Register for an Event</h2>
         <form>
           <fieldset>
-            <p class="form-required">Required</p>
             <legend>Select Event</legend>
+            <p class="form-required">Required</p>
             <label for="event-select">Event:</label>
             <select id="event-select" name="event-select" required>
               <option value="" disabled selected>Select an event</option>
@@ -124,8 +125,8 @@
               required />
           </fieldset>
           <fieldset>
-            <p class="form-required">Required</p>
             <legend>Agreements</legend>
+            <p class="form-required">Required</p>
             <p>
               Events registration and attendance is first come, first serve.
               Failure to arrive within 10 minutes of the event start time may
@@ -180,7 +181,9 @@
           </fieldset>
           <fieldset>
             <legend>Additional Information</legend>
-            <p>Accommodations or Special Requests:</p>
+            <label for="special-requests"
+              >Accommodations or Special Requests:</label
+            >
             <textarea
               id="special-requests"
               name="special-requests"
@@ -189,12 +192,14 @@
               placeholder="Please specify any accommodations or special requests here."></textarea>
           </fieldset>
           <div class="registration-buttons">
-            <button type="submit">Submit Form</button>
-            <button type="reset">Reset Form</button>
-            <button type="button">
-              <a href="events.html">Events</a>
+            <button class="registration-form-button" type="submit">
+              Submit Form
             </button>
-            <button type="button"><a href="index.html">Home</a></button>
+            <button class="registration-form-button" type="reset">
+              Reset Form
+            </button>
+            <a class="registration-form-button" href="events.html">Events</a>
+            <a class="registration-form-button" href="index.html">Home</a>
           </div>
         </form>
       </section>
@@ -203,6 +208,7 @@
       <!-- social media icons -->
       <div class="social-icons">
         <a href="https://www.facebook.com/" target="_blank">
+          <span class="sr-only">Sprout & Grow on Facebook</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
             <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
             <path
@@ -210,6 +216,7 @@
           </svg>
         </a>
         <a href="https://x.com/" target="_blank">
+          <span class="sr-only">Sprout & Grow on X</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
             <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
             <path
