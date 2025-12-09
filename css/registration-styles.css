@@ -76,9 +76,9 @@
 }
 
 .registration-buttons button {
-  /* reset default button styles */
+  /* adjust button styles for consistent form buttons */
   border: none;
-  padding: 0;
+  padding: 1rem 1.25rem;
   font-family: 'Quicksand', Arial, sans-serif;
 }
 
@@ -97,8 +97,3 @@
 .registration-form-button:focus {
   background-color: #8fbd4f;
 }
-
-/* .registration-buttons a {
-  color: #f4f0ec;
-  text-decoration: none;
-} */
