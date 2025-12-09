@@ -78,7 +78,7 @@
 .registration-buttons button {
   /* reset default button styles */
   border: none;
-  padding: none;
+  padding: 0;
   font-family: 'Quicksand', Arial, sans-serif;
 }
 
