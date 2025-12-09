@@ -76,22 +76,29 @@
 }
 
 .registration-buttons button {
+  /* reset default button styles */
+  border: none;
+  padding: none;
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+.registration-form-button {
   padding: 1rem 1.25rem;
   border-radius: 5px;
   background-color: #054d3b;
   color: #f4f0ec;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 1.25rem;
   font-weight: bold;
   cursor: pointer;
 }
 
-.registration-buttons button:hover,
-.registration-buttons button:focus {
+.registration-form-button:hover,
+.registration-form-button:focus {
   background-color: #8fbd4f;
 }
 
-.registration-buttons a {
+/* .registration-buttons a {
   color: #f4f0ec;
   text-decoration: none;
-}
+} */
