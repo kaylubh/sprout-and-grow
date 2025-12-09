@@ -1,0 +1,97 @@
+.registration form,
+.registration p,
+.registration input,
+.registration select,
+.registration textarea,
+.registration label {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.registration {
+  margin: 2rem 0;
+  border: #054d3b 5px solid;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: rgba(244, 240, 236, 0.7);
+}
+
+.registration form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.registration fieldset {
+  margin: 0;
+  border: #054d3b 3px solid;
+  border-radius: 15px;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.registration legend {
+  font-weight: bold;
+  color: #054d3b;
+}
+
+.form-required {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.registration input,
+.registration select,
+.registration textarea {
+  padding: 0.5rem;
+  border: #054d3b 2px solid;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  accent-color: #054d3b;
+}
+
+.registration input[type='checkbox'],
+.registration input[type='radio'] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.registration textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.registration input:focus,
+.registration select:focus,
+.registration textarea:focus {
+  border-color: #8fbd4f;
+}
+
+.registration-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.registration-buttons button {
+  padding: 1rem 1.25rem;
+  border-radius: 5px;
+  background-color: #054d3b;
+  color: #f4f0ec;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.registration-buttons button:hover,
+.registration-buttons button:focus {
+  background-color: #8fbd4f;
+}
+
+.registration-buttons a {
+  color: #f4f0ec;
+  text-decoration: none;
+}
